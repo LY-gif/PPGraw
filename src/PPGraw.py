@@ -281,7 +281,7 @@ class PPGraw:
 
     @staticmethod
     def psd(signal, fs,
-            n_seg, n_fft, win="hanning", mode="densitiy",
+            n_seg, n_fft, win="hann", mode="densitiy",
             debug=False):
         """Tool to apply Welch's method for the estimation of the power spectral density or power spectrum.
 
