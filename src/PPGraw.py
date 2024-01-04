@@ -299,7 +299,7 @@ class PPGraw:
         """
 
         # default: noverlap=n_seg//2
-        bin, psd = sig.welch(signal, fs, window=win, nperseg=n_seg, nfft=n_fft, return_onesided=True, scaling=mode)
+        bin, psd = sig.welch(signal, fs, window='hann', nperseg=n_seg, nfft=n_fft, return_onesided=True, scaling=mode)
         return bin, psd
 
     # REVIEW TOOL METHODS
